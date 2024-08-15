@@ -10,13 +10,13 @@ const LandingPage = () => {
       <header className="landing-header">
         <img src={logo} alt="Logo" className="headerLogo" />
         <div className="navLinks">
-          <Link to="/">
+          <Link to="/About">
             <button>About</button>
           </Link>
-          <Link to="/">
+          <Link to="/Features">
             <button>Features</button>
           </Link>
-          <Link to="/">
+          <Link to="/Contact">
             <button>Contact us</button>
           </Link>
         </div>
@@ -45,15 +45,15 @@ const LandingPage = () => {
       </main>
       <footer>
         <nav>
-        <a href="https://github.com/Hackathon-5XA/Cold-Recog-UI/issues">
-          <button>Issues</button>
-        </a>
-        <a href="https://github.com/Hackathon-5XA">
-          <button>Repo</button>
-        </a>
-        <a href="/">
-          <button>Privacy Policy</button>
-        </a>
+          <a href="https://github.com/Hackathon-5XA/Cold-Recog-UI/issues">
+            <button>Issues</button>
+          </a>
+          <a href="https://github.com/Hackathon-5XA">
+            <button>Repo</button>
+          </a>
+          <a href="/">
+            <button>Privacy Policy</button>
+          </a>
         </nav>
         <h1>CopyRight &copy; 5XA</h1>
       </footer>
