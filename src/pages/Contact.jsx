@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import "../styles/Contact.css"; // Ensure this path is correct
 import contactImage from "../assets/contact-us-content.gif";
-
+import Header from "./Header";
+import Footer from "./Footer";
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -41,6 +42,7 @@ const Contact = () => {
 
   return (
     <div className="contact-page">
+      <Header/>
       <header className="contact-header">
         <motion.h1
           initial={{ opacity: 0, y: -50 }}
@@ -118,11 +120,7 @@ const Contact = () => {
           {status && <p className="status-message">{status}</p>}
         </motion.form>
       </main>
-      <footer className="contact-footer">
-        <p style={{ color: "#32E0C4" }}>
-          &copy; {new Date().getFullYear()} Cold-Recog. All rights reserved.
-        </p>
-      </footer>
+     <Footer/> 
     </div>
   );
 };

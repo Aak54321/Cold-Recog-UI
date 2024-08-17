@@ -7,6 +7,8 @@ import teamMember3 from "../assets/ak.jpeg";
 import teamMember4 from "../assets/renmain.jpeg";
 import teamMember5 from "../assets/gg.jpeg";
 import teamMember6 from "../assets/aarthie.jpeg";
+import Header from "./Header";
+import Footer from "./Footer"
 const containerVariants = {
   hidden: { opacity: 0, scale: 0.8 },
   visible: {
@@ -56,7 +58,8 @@ const About = () => {
         animate={{ y: 0 }}
         transition={{ delay: 0.2, type: "spring", stiffness: 120 }}
       >
-        <h1>About Us</h1>
+        {/* <h1>About Us</h1> */}
+        <Header/>
       </motion.header>
 
       <motion.section className="about-content">
@@ -188,6 +191,7 @@ const About = () => {
           )}
         </AnimatePresence>
       </motion.section>
+      <Footer/>
     </motion.div>
   );
 };
